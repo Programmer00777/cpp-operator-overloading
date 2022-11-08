@@ -3,4 +3,4 @@ project(lb2)
 
 set(CMAKE_CXX_STANDARD 14)
 
-add_executable(lb2 main.cpp Set.h)
+add_executable(lb2 main.cpp Set.h RandomSetGenerator.h SetService.h)

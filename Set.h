@@ -20,6 +20,18 @@ public:
         this->set = sample.set;
     }
 
+    const vector<int> &getSet() const {
+        return set;
+    }
+
+    int get(int index) {
+        return set.at(index);
+    }
+
+    int getSize() {
+        return set.size();
+    }
+
     Set operator + (int value) {
         if (count(set.begin(), set.end(), value) == 0) {
             set.push_back(value);
